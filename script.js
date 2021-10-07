@@ -1,5 +1,6 @@
 function bottomBore() {
 }
 function topBore() {
+ topboredia = "";
 }
-alert("hi");
+
