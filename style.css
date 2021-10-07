@@ -1,0 +1,89 @@
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Noto Sans";
+  --font-family-header: "Noto Sans";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: 'Courier New', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: (36393f);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: #2800FF;
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Subheading */
+h2 {
+  color: #000000;
+  font-family: 'Courier New', monospace;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button rotate
+- Toggling this class on and off will rotate it forward and back
+- The button transition property above determines the speed of rotation (500ms)
+*/
+.rotated {
+  transform: rotate(360deg);
+}
+
+html {
+  background: linear-gradient(170deg, rgba(255,75,75,1) 0%, rgba(255,173,50,1) 50%, rgba(46,220,255,1) 100%);
+  background-size: 1000% 1000%;
+}
