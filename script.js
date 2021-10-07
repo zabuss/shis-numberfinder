@@ -1,1 +1,5 @@
-var hi = "hi"
+function bottomBore() {
+}
+function topBore() {
+}
+alert("hi");
